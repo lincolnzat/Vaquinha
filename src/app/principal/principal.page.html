@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="secondary">
+    <ion-menu-button color="dark" slot="start"></ion-menu-button>
+    <ion-title class="ion-text-center">Página inicial</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <img alt="Silhouette of mountains" src="https://img.freepik.com/free-vector/man-working-laptop-with-coffee-stationary-cartoon-vector-illustration_138676-2206.jpg?w=826&t=st=1695084306~exp=1695084906~hmac=2fce9720537bc57bb773f30b128a369bb4cd3711afb2220db63701ae96021341" />
+    <ion-card-header>
+      <ion-card-title class="ion-text-center">Vaquinha para a compra de novos computadores para a escola Albino Luiz Caldas</ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="ion-text-center">
+      Essa vaquinha tem como objetivo arrecadar dinheiro para a compra de novos computadores para a escola E.E Albino Luiz Caldas.
+      Se você puder contribuir, ficaremos agradecidos!
+    </ion-card-content>
+   </ion-card>
+   <ion-card>
+    <ion-card-header>
+        <ion-card-title class="ion-text-center">Dinheiro arrecadado</ion-card-title>
+        <ion-card-subtitle>Sim</ion-card-subtitle>
+      </ion-card-header>
+   </ion-card>
+    <div id="container">
+      <ion-button expand="block" shape="round" color="secondary" [routerLink]="['/cadastro']">Contribuir</ion-button>
+    </div>
+</ion-content>

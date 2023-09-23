@@ -1,0 +1,21 @@
+<ion-app>
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-menu-button color="primary" slot="start"></ion-menu-button>
+      <ion-toolbar color="secondary">
+        <ion-title>Telas</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">Escolha a tela:
+    <ion-item [routerLink]="['principal']"><ion-icon name="home-outline" color="medium" slot="start"></ion-icon><ion-menu-toggle>Página principal</ion-menu-toggle></ion-item>
+    <ion-item [routerLink]="['cadastro']"><ion-icon name="add-circle" color="medium" slot="start"></ion-icon><ion-menu-toggle>Cadastro de doações</ion-menu-toggle></ion-item>
+    <ion-menu-toggle><ion-item  [routerLink]="['doacoes']"><ion-icon name="today" color="medium" slot="start"></ion-icon>Doações</ion-item></ion-menu-toggle>
+    <ion-item [routerLink]="['home']"><ion-icon name="exit-outline" color="medium" slot="start"></ion-icon><ion-menu-toggle>Sair</ion-menu-toggle></ion-item>
+    </ion-content>
+    <ion-menu-toggle><ion-button color="secondary">Fechar Menu</ion-button></ion-menu-toggle>
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+
+  </div>
+  <ion-router-outlet></ion-router-outlet>
+</ion-app>

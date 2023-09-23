@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="secondary">
+    <ion-menu-button color="dark" slot="start"></ion-menu-button>
+    <ion-title class="ion-text-center">Cadastro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-content>
+    <ion-list lines="full">
+      <form  [formGroup]="bookingForm" (ngSubmit)="formSubmit()">
+        <ion-item>
+          <ion-label position="floating" >Nome</ion-label>
+          <ion-input formControlName="nome" type="text" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">E-mail</ion-label>
+          <ion-input  formControlName="email" type="text" required>
+          </ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Telefone</ion-label>
+          <ion-input formControlName="telefone" type="text" required>
+          </ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Valor da doação</ion-label>
+          <ion-input formControlName="valor" type="text" required>
+          </ion-input>
+        </ion-item>
+        <ion-row>
+          <ion-col>
+            <ion-button type="submit" color="secondary" shape="round" expand="block">Enviar doação</ion-button>
+          </ion-col>
+        </ion-row>
+      </form>
+    </ion-list>
+  
+</ion-content>
